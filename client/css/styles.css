@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,900;1,1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.dataList {
+    display: grid;
+    grid-auto-rows: 1fr;
+    list-style: none;
+    gap: 10px;
+}
+
+.dataList > li {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.dataList > li > .list-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin: 6px 0;
+}
+
+.dataList > li > .list-container > a {
+    margin: 5px 0;
+}
+
+.noData {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+
+    .dataList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .heading-title {
+        font-size: 18px;
+    }
+
+
+    .dataList > li > .list-container > h2 {
+        font-size: 16px;
+    }
+
+    .list-container > a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
